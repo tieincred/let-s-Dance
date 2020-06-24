@@ -1,0 +1,21 @@
+read me!
+DATA PREPROCESSING
+1. The train data was split according to 8 classes according to the labels given.
+2. data was processed to a numerical form and changed dimensions.
+3. the data was flatten to provide an input in cnn layers.
+DESIGNING THE MODEL
+1. using keras API I developed the model.
+2. the model has Conv2D layer as input layer. with 32 filters, 5 kernel size, and activation function of relu. the images have been resized to 64*64.
+3. Model next has a pooling layer, with pool size 4 and 2 as strides.
+4. we repeat the layers again. with same things.
+5.Add a flatten layer to input into fully connected layer.
+6.input layer with 64 units of neuron, and with activation function 'relu'.
+7.dropout layers with rate 0.3.
+8.dense layer with 32 neuron with 'relu'.
+9. output layer 8 units and 'softmax' function.
+10. while compiling adam is the optimizer and loss function being sparse_categorical_crossentropy and metrics of accuracy.
+11. trained the data on 10 epochs. 
+12. found results for the test data. as final_predictions.
+IMPOTANT NOTE: the code gonna give error if ran twice cause once data is systematically set up, the code wouldn't find it again!
+To run again we need to make the folder the it was earlier!
+
